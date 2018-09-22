@@ -197,6 +197,8 @@ a:focus {
     transition:         opacity 1s;
 }
 
+.impress-enabled .step.golf { opacity: 0.1 }
+
 .impress-enabled .step.active { opacity: 1 }
 
 /*
@@ -269,10 +271,18 @@ code .val {
 }
 
 .counter {
+    display: none;
     position: fixed;
     bottom: 10px;
     left: 10px;
     color: #cb4b16;
+}
+.counterpinned {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: #cb4b16;
+    font-size: 48px;
 }
 
 .step.future {

@@ -56,7 +56,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-1" class="step" data-rotate-y="90">
+    <div id="fizzbuzz-1" class="step golf" data-rotate-y="90">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>, <span class="val">101</span>)<span class="op">:</span>
     <span class="keyword">if</span> <span class="name">i</span> <span class="op">%</span> <span class="val">15</span> <span class="op">==</span> <span class="val">0</span><span class="op">:</span>
@@ -78,7 +78,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-2" class="step" data-rotate-y="90" data-z="-1000">
+    <div id="fizzbuzz-2" class="step golf" data-rotate-y="90" data-z="-1000">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>, <span class="val">101</span>)<span class="op">:</span>
     <span class="name">l</span> <span class="op">=</span> [<span class="name">i</span><span class="op">%</span><span class="val">15</span>, <span class="name">i</span><span class="op">%</span><span class="val">3</span>, <span class="name">i</span><span class="op">%</span><span class="val">5</span>]
@@ -95,7 +95,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-3" class="step" data-rotate-y="90" data-z="-2000">
+    <div id="fizzbuzz-3" class="step golf" data-rotate-y="90" data-z="-2000">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>, <span class="val">101</span>)<span class="op">:</span>
     <span class="keyword">try</span><span class="op">:</span>
@@ -109,7 +109,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-4" class="step" data-rotate-y="90" data-z="-3000">
+    <div id="fizzbuzz-4" class="step golf" data-rotate-y="90" data-z="-3000">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>, <span class="val">101</span>)<span class="op">:</span>
     <span class="name">print</span>([<span class="val">"FizzBuzz"</span>, <span class="val">"Fizz"</span>, <span class="val">"Buzz"</span>, <span class="name">i</span>]<span class="op">[</span>[<span class="name">i</span><span class="op">%</span><span class="val">15</span>, <span class="name">i</span><span class="op">%</span><span class="val">3</span>, <span class="name">i</span><span class="op">%</span><span class="val">5</span>, <span class="val">0</span>]<span class="op">.</span><span class="name">index</span>(<span class="val">0</span>)<span class="op">]</span>)
@@ -121,7 +121,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-5" class="step" data-rotate-y="90" data-z="-4000">
+    <div id="fizzbuzz-5" class="step golf" data-rotate-y="90" data-z="-4000">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>,<span class="val">101</span>)<span class="op">:</span><span class="name">print</span>(
 [<span class="val">"FizzBuzz"</span>,<span class="val">"Fizz"</span>,<span class="val">"Buzz"</span>,<span class="name">i</span>]
@@ -134,7 +134,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-6" class="step" data-rotate-y="90" data-z="-5000">
+    <div id="fizzbuzz-6" class="step golf" data-rotate-y="90" data-z="-5000">
         <code lang="python">
 <span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">1</span>,<span class="val">101</span>)<span class="op">:</span><span class="name">print</span>(
 <span class="val">"Fizz"</span><span class="op">*</span>(<span class="name">i</span><span class="op">%</span><span class="val">3</span><span class="op">&lt;</span><span class="val">1</span>)<span class="op">+</span><span class="val">"Buzz"</span><span class="op">*</span>(<span class="name">i</span><span class="op">%</span><span class="val">5</span><span class="op">&lt;</span><span class="val">1</span>)<span class="keyword">or</span> <span class="name">i</span>)
@@ -150,7 +150,7 @@
         </span>
     </div>
 
-    <div id="fizzbuzz-7" class="step" data-rotate-y="90" data-z="-6000">
+    <div id="fizzbuzz-7" class="step golf" data-rotate-y="90" data-z="-6000">
         <code lang="python">
 <span class="keyword">i</span><span class="op">=</span><span class="val">0</span><span class="op">;</span><span class="name">exec</span>(<span class="val">"</span><span class="name">print</span>(
 <span class="val">i</span><span class="op">%</span><span class="val">3</span><span class="op">//</span><span class="val">2</span><span class="op">*</span><span class="val">'Fizz'</span>
@@ -211,9 +211,61 @@
     <!-- </div> -->
 
 </div>
+<span class="counterpinned"></span>
 
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
+<script>
+function setcounter(value) {
+    for (var i=0; i<value.length; i++) {
+        (function(i){
+            window.setTimeout(function(){
+                document.querySelector(".counterpinned").textContent = value.slice(0, i+1);
+            }, i*100)
+        })(i)
+    }
+}
+function delcounter() {
+    var value = document.querySelector(".counterpinned").textContent;
+    for (var i=0; i<value.length; i++) {
+        (function(i){
+            window.setTimeout(function(){
+                document.querySelector(".counterpinned").textContent = value.slice(0, (value.length-i-1));
+            }, i*100)
+        })(i)
+    }
+}
+window.document.addEventListener("impress:stepenter", function() {
+    var h = location.hash;
+    if(h === "#/fizzbuzz-1") {
+        setcounter("182");
+    }
+    else if(h === "#/fizzbuzz-2") {
+        setcounter("142");
+    }
+    else if(h === "#/fizzbuzz-3") {
+        setcounter("132");
+    }
+    else if(h === "#/fizzbuzz-4") {
+        setcounter("96");
+    }
+    else if(h === "#/fizzbuzz-5") {
+        setcounter("84");
+    }
+    else if(h === "#/fizzbuzz-6") {
+        setcounter("62");
+    }
+    else if(h === "#/fizzbuzz-7") {
+        setcounter("61");
+    }
+    else if(h === "#/credits") {
+        setcounter('for x in 0,1,2,3:print("h yoipcn"[x::4],end="")');
+    }
+});
+window.document.addEventListener("impress:stepleave", function() {
+    delcounter();
+});
+</script>
 
 </body>
 </html>
