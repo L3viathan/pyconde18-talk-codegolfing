@@ -217,11 +217,33 @@
 <script>impress().init();</script>
 <script>
 function setcounter(value) {
+    var j = 1;
     for (var i=0; i<value.length; i++) {
         (function(i){
+            // these immediately executed functions are necessary to make the
+            // closures "own" the variables — otherwise the i at the time of
+            // the timeout will be used, rather than the one in the current for
+            // loop step.
+            var t = value.charCodeAt(i);
+            var c = 48;
+            while (c<=t) {
+                (function(c){window.setTimeout(function(){
+                    document.querySelector(".counterpinned").textContent = value.slice(0, i) + String.fromCharCode(c);
+                }, j*50)})(c);
+                console.log("Setting to " + value.slice(0, i) + String.fromCharCode(c) + " in " + j*100 + "ms");
+                c++;
+                j++;
+            }
+            /*
+            window.setTimeout(function(){
+                document.querySelector(".counterpinned").textContent = value.slice(0, i) + "0123456789"[~~(Math.random()*10)];
+            }, i*150-50)
+            console.log("Setting to random");
             window.setTimeout(function(){
                 document.querySelector(".counterpinned").textContent = value.slice(0, i+1);
-            }, i*100)
+            }, i*150)
+            console.log("Setting to random");
+            */
         })(i)
     }
 }
@@ -258,9 +280,9 @@ window.document.addEventListener("impress:stepenter", function() {
     else if(h === "#/fizzbuzz-7") {
         setcounter("61");
     }
-    else if(h === "#/credits") {
-        setcounter('for x in 0,1,2,3:print("h yoipcn"[x::4],end="")');
-    }
+    // else if(h === "#/credits") {
+    //     setcounter('for x in 0,1,2,3:print("h yoipcn"[x::4],end="")');
+    // }
 });
 window.document.addEventListener("impress:stepleave", function() {
     delcounter();
