@@ -87,11 +87,11 @@ body {
 
     background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -webkit-radial-gradient(rgb(255, 240, 240), rgb(200, 200, 200));
+    background:    -moz-radial-gradient(rgb(255, 240, 240), rgb(200, 200, 200));
+    background:     -ms-radial-gradient(rgb(255, 240, 240), rgb(200, 200, 200));
+    background:      -o-radial-gradient(rgb(255, 240, 240), rgb(200, 200, 200));
+    background:         radial-gradient(rgb(255, 240, 240), rgb(200, 200, 200));
 }
 
 /*
@@ -217,8 +217,8 @@ a:focus {
     padding: 40px 60px;
 
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
     color: rgb(102, 102, 102);
@@ -314,9 +314,17 @@ code .val {
     left: 16%;
 }
 
+#title img {
+    position: absolute;
+    width: 200px;
+    bottom: 180px;
+    right: 370px;
+}
+
 .impress-on-fizzbuzz-2 #title {display: none;}
 .impress-on-fizzbuzz-3 #title {display: none;}
 .impress-on-fizzbuzz-4 #title {display: none;}
+.impress-on-fizzbuzz-5 #title {display: none;}
 
 
 #warning h2 {
@@ -338,10 +346,12 @@ code .val {
 .impress-on-fizzbuzz-2 #warning {display: none;}
 .impress-on-fizzbuzz-3 #warning {display: none;}
 .impress-on-fizzbuzz-4 #warning {display: none;}
+.impress-on-fizzbuzz-5 #warning {display: none;}
 
 .impress-on-fizzbuzz-2 #what-is-codegolfing {display: none;}
 .impress-on-fizzbuzz-3 #what-is-codegolfing {display: none;}
 .impress-on-fizzbuzz-4 #what-is-codegolfing {display: none;}
+.impress-on-fizzbuzz-5 #what-is-codegolfing {display: none;}
 
 #technically-correct h3 {
     position: absolute;
@@ -358,6 +368,7 @@ code .val {
 .impress-on-fizzbuzz-2 #technically-correct {display: none;}
 .impress-on-fizzbuzz-3 #technically-correct {display: none;}
 .impress-on-fizzbuzz-4 #technically-correct {display: none;}
+.impress-on-fizzbuzz-5 #technically-correct {display: none;}
 
 
 #as-short-as-possible em {
@@ -368,6 +379,7 @@ code .val {
 .impress-on-fizzbuzz-2 #as-short-as-possible {display: none;}
 .impress-on-fizzbuzz-3 #as-short-as-possible {display: none;}
 .impress-on-fizzbuzz-4 #as-short-as-possible {display: none;}
+.impress-on-fizzbuzz-5 #as-short-as-possible {display: none;}
 #no-step-three em {
     position: absolute;
     font-size: 70%;
@@ -376,6 +388,7 @@ code .val {
 .impress-on-fizzbuzz-2 #no-step-three {display: none;}
 .impress-on-fizzbuzz-3 #no-step-three {display: none;}
 .impress-on-fizzbuzz-4 #no-step-three {display: none;}
+.impress-on-fizzbuzz-5 #no-step-three {display: none;}
 
 #fizzbuzz-2 code {
     font-size: 60%;
