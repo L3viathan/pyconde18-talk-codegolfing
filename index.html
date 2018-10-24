@@ -26,14 +26,23 @@
         <span class="author">Jonathan Oberländer</span>
         <span class="date">PyConDE 2018</span>
         <img src="RGB_solute.svg">
+        <span class="notes">
+            name, company, title. What is codegolfing? Wait...
+        </span>
     </div>
     <div id="warning" class="step slide" data-x="0" data-y="-1500">
         <h2>Warning</h2>
         <span>Doing this at work will (hopefully) get you fired.</span>
+        <span class="notes">
+            ...rightfully so.
+        </span>
     </div>
 
     <div id="what-is-codegolfing" class="step" data-x="1000" data-y="-1500">
         <h2>What is Codegolfing?</h2>
+        <span class="notes">
+            Writing code that fulfills 3 requirements
+        </span>
     </div>
     <div id="technically-correct" class="step" data-y="-1300">
         <h3>The Art of Writing Code that is</h3>
@@ -89,7 +98,7 @@
         </code>
         <span class="counter">142</span>
         <span class="notes">
-            No conditions; instead: Exception handling
+            No conditions; instead: Exception handling. <strong>often shorter</strong>
             <br>
             List of modoli of value to 15, 5, 3. Order matters (index returns first such index)
         </span>
@@ -105,6 +114,8 @@
         </code>
         <span class="counter">132</span>
         <span class="notes">
+            zero-letter variable names!
+            <br>
             No need for the list reference to be saved
         </span>
     </div>
@@ -144,7 +155,7 @@
             Not by me!<br>
             We put a Fizz if divisible by 3, a buzz if by 5, and _if there is nothing_ ("or"), the number itself.
             <br>
-            Two interesting things: Using &lt;1 saves at least a byte vs. equality comparison operators
+            Two interesting things: Using &lt;1 saves at least a byte vs. equality comparison operators. <strong>Use special knowledge even when the resulting expression is "wrong"</strong>
             <br>thing or other: a trick sometimes seen in the (non-codegolf) wild: or and and expressions equal their last evaluated argument.
             <br>Who thinks we can shorten this? We can — by one byte.
         </span>
@@ -169,7 +180,7 @@
             The rest is slightly complicated, but not _too_ bad: We iterate over the numbers from 0 to 99, not 1 to 100.
             That means we have modulo result 2 (or 4) when we should have a Fizz (or Buzz).<br>
             Then integer division by 2 (4), which only then makes this a 1, otherwise a 0.<br>
-            -~i uses the obscure invert operator (show of hands: who knows what it does?)
+            -~i uses the obscure invert operator (show of hands: who knows what it does?) (solution: -x - 1)
             <br>
             ==> i+1, without needing to paranthesize.
         </span>
