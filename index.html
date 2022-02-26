@@ -189,6 +189,16 @@
             ==> i+1, without needing to paranthesize.
         </span>
     </div>
+
+    <div id="fizzbuzz-8" class="step golf" data-rotate-y="90" data-z="-7000">
+        <code lang="python">
+<span class="keyword">for</span> <span class="name">i</span> <span class="keyword">in</span> <span class="name">range</span>(<span class="val">100</span>)<span class="op">:</span>print</span>(
+<span class="val">i</span><span class="op">%</span><span class="val">3</span><span class="op">//</span><span class="val">2</span><span class="op">*</span><span class="val">'Fizz'</span><span class="op">+</span><span class="name">i</span><span class="op">%</span><span class="val">5</span><span class="op">//</span><span class="val">4</span><span class="op">*</span><span class="val">'Buzz'</span>
+<span class="keyword">or</span><span class="op">-</span><span class="op">~</span><span class="name">i</span>)
+        </code>
+        <span class="counter">59</span>
+    </div>
+
     <div id="why-golf" class="step" data-rotate-x="70">
         <h1>Why golf?</h1>
         <span class="notes">You might be (rightfully) scared and/or disgusted now<br>
@@ -280,6 +290,9 @@ window.document.addEventListener("impress:stepenter", function() {
     }
     else if(h === "#/fizzbuzz-7") {
         setcounter("61");
+    }
+    else if(h === "#/fizzbuzz-8") {
+        setcounter("59");
     }
     // else if(h === "#/credits") {
     //     setcounter('for x in 0,1,2,3:print("h yoipcn"[x::4],end="")');
